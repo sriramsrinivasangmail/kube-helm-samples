@@ -12,8 +12,6 @@ curl -kiv https://<CLUSTER-IP>
 
 curl -kv "https://<CLUSTER-IP>/testpost" -d '{"k2": "v2"}'
 
-<br>
 and then visit http://ptsv2.com/t/homers-throne to analyze your posts
-<br>
 
 ```

@@ -1,24 +1,27 @@
 <HTML>
-
 <HEAD>
-
 <TITLE>
-Dummy nginx server
+my https server
 </TITLE>
 </HEAD>
+
 <BODY>
+
 <H1>
-This nginx Server is alive !
+This nginx server is alive !
 </H1>
 
-Try : 
+Try :
 <br>
-curl -kv "https://localhost:7443/testpost" -d '{"k1": "v1"}'
+curl -kv "<div id='here'></div>" -d '{"k1": "v1"}'
 
 <br>
 and then visit http://ptsv2.com/t/homers-throne to analyze your posts
 <br>
 
 </BODY>
+<script>
+        document.getElementById("here").innerHTML = window.location.href + "/testpost";
+</script>
 </HTML>
 

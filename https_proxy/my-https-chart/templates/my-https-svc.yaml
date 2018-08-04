@@ -1,0 +1,19 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: {{ template "my-https-chart.fullname" . }}
+  labels:
+    app: {{ template "my-https-chart.name" . }}
+    chart: {{ template "my-https-chart.chart" . }}
+    release: {{ .Release.Name }}
+    heritage: {{ .Release.Service }}
+spec:
+  type: {{ .Values.service.type }}
+  ports:
+    - port: {{ .Values.service.port }}
+      targetPort: http
+      protocol: TCP
+      name: http
+  selector:
+    app: {{ template "my-https-chart.name" . }}
+    release: {{ .Release.Name }}
