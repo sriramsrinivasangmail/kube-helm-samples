@@ -13,8 +13,8 @@ spec:
         app: my-https
     spec:
       containers:
-      - name: nginx
-        image: nginx-proxy-server:v1
+      - name: https-server
+        image: mycluster.icp:8500/default/https-server:v1
         ports:
         - containerPort: 443
 

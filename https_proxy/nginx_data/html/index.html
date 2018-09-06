@@ -12,16 +12,15 @@ This nginx server is alive !
 </H1>
 
 Try :
-<br>
-curl -kv "<div id='here'></div>" -d '{"k1": "v1"}'
-
-<br>
+<pre>
+curl -kv "<b id='here'></b>" -d '{"k1": "v1"}'
+</pre>
 and then visit http://ptsv2.com/t/homers-throne to analyze your posts
 <br>
 
 </BODY>
 <script>
-        document.getElementById("here").innerHTML = window.location.href + "/testpost";
+        document.getElementById("here").innerText = window.location.href + "testpost";
 </script>
 </HTML>
 

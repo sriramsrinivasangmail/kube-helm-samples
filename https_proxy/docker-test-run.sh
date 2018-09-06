@@ -1,8 +1,8 @@
 #!/bin/sh
 
-docker_image_name=nginx-proxy-server
+docker_image_name=mycluster.icp:8500/default/https-server
 docker_image_tag=v1
-container_name=test_nginx_proxy_server
+container_name=test_https_server
 
 docker rm --force ${container_name}
 
