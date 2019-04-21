@@ -1,0 +1,11 @@
+  apiVersion: securityenforcement.admission.cloud.ibm.com/v1beta1
+  kind: ImagePolicy
+  metadata:
+    name: default-image-policy
+    namespace: default
+  spec:
+    repositories:
+    - name: docker.io/*
+    - name: localhost:8500/*
+    - name: mycluster.icp:8500/*
+    - name: "myregistry-svc:5000/dev/*"

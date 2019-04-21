@@ -4,8 +4,10 @@
 
 replicaCount: 1
 
+docker_registry_prefix: mycluster.icp:8500/default
+
 image:
-  repository: nginx-proxy-server
+  repository: https-server
   tag: v1
   pullPolicy: IfNotPresent
 

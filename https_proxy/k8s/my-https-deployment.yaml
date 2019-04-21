@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: https-server
-        image: mycluster.icp:8500/default/https-server:v1
+        image: "myregistry-svc:5000/dev/https-server:v1"
         ports:
         - containerPort: 443
 
