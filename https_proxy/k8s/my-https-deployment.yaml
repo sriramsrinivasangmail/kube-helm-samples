@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: https-server
-        image: "myregistry-svc:5000/dev/https-server:v1"
+        image: "docker-registry.default.svc:5000/default/my-https-server:v1"
         ports:
-        - containerPort: 443
+        - containerPort: 3443
 

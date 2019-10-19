@@ -4,7 +4,7 @@
 
 replicaCount: 1
 
-docker_registry_prefix: mycluster.icp:8500/default
+docker_registry_prefix: docker-registry.default.svc:5000/default
 
 image:
   repository: https-server
@@ -13,7 +13,7 @@ image:
 
 service:
   type: ClusterIP
-  port: 443
+  port: 3443
 
 ingress:
   enabled: false

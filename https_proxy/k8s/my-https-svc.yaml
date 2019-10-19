@@ -9,5 +9,5 @@ spec:
   ports:
   - protocol: TCP
     port: 443
-    targetPort: 443
+    targetPort: 3443
     nodePort: 31002

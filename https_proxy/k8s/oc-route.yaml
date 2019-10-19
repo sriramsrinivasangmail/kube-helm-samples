@@ -1,0 +1,15 @@
+apiVersion: route.openshift.io/v1
+kind: Route
+metadata:
+  name: my-https-route
+  namespace: default
+spec:
+  host: my-https-default.apps.zen-okd12-lb.fyre.ibm.com
+  port:
+    targetPort: 3443
+  tls:
+    termination: passthrough
+  to:
+    kind: Service
+    name: my-https-svc
+  wildcardPolicy: None
